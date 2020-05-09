@@ -1,0 +1,30 @@
+// Footer
+.footer {
+  font-size: 13px;
+  line-height: 16px;
+  color: $white;
+  background: $darkest-grey;
+  text-transform: uppercase;
+  font-weight: 700;
+  p { margin: 0; }
+}
+.icon-list-inline {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  @include breakpoint(m) {
+    margin-top: 0;
+    text-align: right;
+  }
+  li {
+    border-left: 1px solid $pink;
+    padding-left: 15px;
+    margin-left: 10px;
+    display: inline-block;
+    &:first-child {
+      margin-left: 0;
+      padding-left: 0;
+      border-left-color: transparent;
+    }
+  }
+}
